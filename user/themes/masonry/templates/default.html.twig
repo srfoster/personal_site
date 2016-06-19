@@ -1,0 +1,55 @@
+{% extends 'partials/base.html.twig' %} 
+{% set collection = page.collection() %} 
+
+{% block content %}
+
+<header class="main-header {% if page.header.cover %}" style="background-image: url({{ page.media[page.header.cover].url }}) {% else %} no-cover {% endif %}">
+    <nav class="main-nav overlay clearfix">
+        {% if site.logo %}
+                    <figure class="author-image" style=" left: 60px; top: 20px;">
+                        <a class="img" href="/" style="background-image: url({{ site.author.image }})">
+                            <span class="hidden">{{site.author.name}}'s Picture</span>
+                        </a>
+                    </figure>
+        {% endif %}
+
+        <a class="menu-button icon-menu" href="#">
+            <label for="show-menu" class="word">Menu</label>
+        </a>
+    </nav>
+    <div class="vertical">
+        <div class="main-header-content inner">
+            <h1 class="page-title">{{ site.author.name }}</h1>
+            <h2 class="page-description">{{ site.description}}</h2>
+        </div>
+    </div>
+    <a class="scroll-down icon-arrow-left" href="#content" data-offset="-45"><span class="hidden">Scroll Down</span></a>
+</header>
+
+
+<main id="content" class="content" role="main">
+   <h1 style="text-align: center">Current Projects</h1>
+    <div class="wrapper">
+        <section class="masonry">
+            {% for post in collection|reverse %} {% include 'partials/article.html.twig' %} {% endfor %}
+        </section>
+    </div>
+    {% if config.plugins.pagination.enabled and collection.params.pagination %} 
+        {% include 'partials/pagination.html.twig' with {'base_url': page.url, 'pagination':collection.params.pagination} %} 
+    {% endif %}
+</main>
+
+
+<main id="blog" class="content" role="main">
+    <h1 style="text-align: center;">Bloggy Stuff</h1>
+    <div class="wrapper">
+        <section class="masonry">
+            {% for post in page.collection("blog") %} {% include 'partials/article.html.twig' %} {% endfor %}
+        </section>
+    </div>
+    {% if config.plugins.pagination.enabled and page.collection("blog").params.pagination %} 
+        {% include 'partials/pagination.html.twig' with {'base_url': page.url, 'pagination':page.collection("blog").params.pagination} %} 
+    {% endif %}
+</main>
+
+{% endblock %}
