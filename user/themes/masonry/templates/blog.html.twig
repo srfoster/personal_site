@@ -1,0 +1,22 @@
+{% extends 'partials/base.html.twig' %} 
+{% set collection = page.collection() %} 
+
+{% block content %}
+
+{% include 'partials/header.html.twig' %}
+
+
+<main id="content" class="content" role="main">
+   <h1 style="text-align: center">Bloggy Stuff</h1>
+    <div class="wrapper">
+        <section class="masonry">
+            {% for post in collection %} {% include 'partials/article.html.twig' %} {% endfor %}
+        </section>
+    </div>
+    {% if config.plugins.pagination.enabled and collection.params.pagination %} 
+        {% include 'partials/pagination.html.twig' with {'base_url': page.url, 'pagination':collection.params.pagination} %} 
+    {% endif %}
+</main>
+
+
+{% endblock %}

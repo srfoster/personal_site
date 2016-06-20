@@ -6,3 +6,4 @@ taxonomy:
 image: 
 ---
 
+I wrote a distopian sci-fi novel when I was 19.  I published it a few years ago.  It's about a girl attends a black ops high school.
