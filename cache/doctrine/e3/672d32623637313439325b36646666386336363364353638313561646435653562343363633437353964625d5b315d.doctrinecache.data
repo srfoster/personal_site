@@ -1,9 +1,0 @@
-1467051646
-a:2:{s:7:"content";s:847:"<p>Vox-L is one of the games I'm producing.  It's basically a combination of Gary's Mod and Minecraft.  You can find the site here: <a href="http://vox-l.com">vox-l.com</a>.</p>
-<p>It's somewhere between a game and a game engine, so I'm calling it an "engine game".</p>
-<p>It started as an emulator for Minecraft modding in <a href="/projects/learntomod">LearnToMod</a> -- one of my other projects.  Since then, I've added some support for physics, custom assets, and an event-driven modding API.</p>
-<p>Physics video demo:</p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/sT9yQo6Cu3g?start=90" frameborder="0" allowfullscreen></iframe>  
-<p><br/>
-<br/> </p>
-<p>I'm the lead coder on this project.  But I'll be switching into a product manager role with it shortly.  You can expect to see Vox-L on Kickstarter this year.</p>";s:12:"content_meta";N;}

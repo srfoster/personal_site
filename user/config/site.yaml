@@ -1,19 +1,21 @@
-title: Stephen Foster
+title: Stephen R. Foster
 description: I code good 
 taxonomies: [tag, featured]
 metadata:
-    description: Stephen R. Foster does stuff.  This site is about that stuff.
+    description: Stephen R. Foster does stuff.  He founded ThoughtSTEM and does business stuff.  He makes educational game stuff: CodeSpells, LearnToMod, and Vox-L.  This site is about that stuff and other stuff.
 
 logo: /user/images/avatar.jpg
 
 date_long: 'd F Y'
 date_short: 'd M Y'
 
+disqus: stephenfoster
+
 author:
     name: Stephen R. Foster
     email: stephen@thoughtstem.com
     image: /user/images/avatar.jpg
-    bio: I'm a coder and founder of a software company.  I launch a lot of products.
+    bio: I'm a coder and founder of a software company.  Teaching the world to code is my mission.
 
 social:
     - icon: twitter

@@ -1,0 +1,19 @@
+---
+title:  "First Job"
+slug: first-job
+taxonomy:
+    tag: [blog, life]
+image: job.png
+---
+
+My sister just graduated with her CS degree.  She's been working as a part-time coder and part-time graphic designer for my company for the past few years.  When I told her she should "get a real job now", instead of working for her brother, she said:
+
+"But I don't know what I want to do in life yet."
+
+Here's the email I sent in response:
+
+>Don't think of getting a job as "deciding what to do".  Sometimes you just get a job to gain more skills so you have more options.  In fact, getting a job is a great way to **delay** the decision of "deciding what to do".
+
+>I learned more in 1 year at my first job than I did in 4 years of college.  I doubled my XP really quickly.  If I hadn't done that, I wouldn't have gone to grad school and I wouldn't have started a company.
+
+>So just do it.  You're not finalizing your career.  You're beginning it.

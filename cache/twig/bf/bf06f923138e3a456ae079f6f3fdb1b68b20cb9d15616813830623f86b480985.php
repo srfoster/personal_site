@@ -19,7 +19,7 @@ class __TwigTemplate_8f7c10f02efe40212dc22dd1ae23a14d6306fb07b920a19763ade78f44a
         echo "
 ";
         // line 2
-        $this->loadTemplate("post.html.twig", "post.html.twig", 2, "1407300016")->display($context);
+        $this->loadTemplate("post.html.twig", "post.html.twig", 2, "1798352656")->display($context);
     }
 
     public function getTemplateName()
@@ -40,7 +40,7 @@ class __TwigTemplate_8f7c10f02efe40212dc22dd1ae23a14d6306fb07b920a19763ade78f44a
 
 
 /* post.html.twig */
-class __TwigTemplate_8f7c10f02efe40212dc22dd1ae23a14d6306fb07b920a19763ade78f44ac94f4_1407300016 extends Twig_Template
+class __TwigTemplate_8f7c10f02efe40212dc22dd1ae23a14d6306fb07b920a19763ade78f44ac94f4_1798352656 extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
     {
@@ -77,32 +77,33 @@ class __TwigTemplate_8f7c10f02efe40212dc22dd1ae23a14d6306fb07b920a19763ade78f44a
     {
         // line 9
         echo "
+
 ";
-        // line 10
-        $this->loadTemplate("partials/header.html.twig", "post.html.twig", 10)->display($context);
         // line 11
+        $this->loadTemplate("partials/header.html.twig", "post.html.twig", 11)->display($context);
+        // line 12
         echo " 
 <main class=\"content\" role=\"main\">
     <article class=\"post\">
         <header class=\"post-header\">
             ";
-        // line 15
-        $this->loadTemplate("partials/breadcrumbs.html.twig", "post.html.twig", 15)->display($context);
         // line 16
+        $this->loadTemplate("partials/breadcrumbs.html.twig", "post.html.twig", 16)->display($context);
+        // line 17
         echo "            <h1 class=\"post-title\">";
         echo $this->getAttribute((isset($context["page"]) ? $context["page"] : null), "title", array());
         echo "</h1>
             <section class=\"post-meta\">
                <time class=\"post-date\" datetime=\"";
-        // line 18
+        // line 19
         echo twig_date_format_filter($this->env, $this->getAttribute((isset($context["page"]) ? $context["page"] : null), "date", array()), $this->getAttribute((isset($context["site"]) ? $context["site"] : null), "date_short", array()));
         echo "\">";
         echo twig_date_format_filter($this->env, $this->getAttribute((isset($context["page"]) ? $context["page"] : null), "date", array()), $this->getAttribute((isset($context["site"]) ? $context["site"] : null), "date_short", array()));
         echo "</time>
                 ";
-        // line 19
+        // line 20
         if ((twig_length_filter($this->env, $this->getAttribute($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "taxonomy", array()), "tag", array())) > 0)) {
-            // line 20
+            // line 21
             echo "                    on ";
             $context['_parent'] = $context;
             $context['_seq'] = twig_ensure_traversable($this->getAttribute($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "taxonomy", array()), "tag", array()));
@@ -145,16 +146,16 @@ class __TwigTemplate_8f7c10f02efe40212dc22dd1ae23a14d6306fb07b920a19763ade78f44a
             $_parent = $context['_parent'];
             unset($context['_seq'], $context['_iterated'], $context['_key'], $context['tag'], $context['_parent'], $context['loop']);
             $context = array_intersect_key($context, $_parent) + $_parent;
-            // line 21
+            // line 22
             echo "                ";
         }
-        // line 22
+        // line 23
         echo "            </section>
         </header>
 
         <section class=\"post-content\">
             ";
-        // line 26
+        // line 27
         echo (isset($context["content"]) ? $context["content"] : null);
         echo "
             <div id=\"disqus_thread\"></div>
@@ -163,61 +164,61 @@ class __TwigTemplate_8f7c10f02efe40212dc22dd1ae23a14d6306fb07b920a19763ade78f44a
 
         <footer class=\"post-footer\">
             ";
-        // line 32
+        // line 33
         if ($this->getAttribute((isset($context["site"]) ? $context["site"] : null), "author", array())) {
-            // line 33
+            // line 34
             echo "                ";
             if ($this->getAttribute($this->getAttribute((isset($context["site"]) ? $context["site"] : null), "author", array()), "image", array())) {
-                // line 34
+                // line 35
                 echo "                    <figure class=\"author-image\">
                         <a class=\"img\" href=\"";
-                // line 35
+                // line 36
                 echo (isset($context["base_url"]) ? $context["base_url"] : null);
                 echo "\" style=\"background-image: url(";
                 echo $this->getAttribute($this->getAttribute((isset($context["site"]) ? $context["site"] : null), "author", array()), "image", array());
                 echo ")\">
                             <span class=\"hidden\">";
-                // line 36
+                // line 37
                 echo $this->getAttribute($this->getAttribute((isset($context["site"]) ? $context["site"] : null), "author", array()), "name", array());
                 echo "'s Picture</span>
                         </a>
                     </figure>
                 ";
             }
-            // line 40
+            // line 41
             echo "                <section class=\"author\">
                     <h4><a href=\"";
-            // line 41
+            // line 42
             echo (isset($context["base_url"]) ? $context["base_url"] : null);
             echo "\">";
             echo $this->getAttribute($this->getAttribute((isset($context["site"]) ? $context["site"] : null), "author", array()), "name", array());
             echo "</a></h4>
     
                     ";
-            // line 43
+            // line 44
             if ($this->getAttribute($this->getAttribute((isset($context["site"]) ? $context["site"] : null), "author", array()), "bio", array())) {
-                // line 44
+                // line 45
                 echo "                        <p>";
                 echo $this->getAttribute($this->getAttribute((isset($context["site"]) ? $context["site"] : null), "author", array()), "bio", array());
                 echo "</p>
                     ";
             } else {
-                // line 46
+                // line 47
                 echo "                        <p>Read <a href=\"";
                 echo (isset($context["base_url"]) ? $context["base_url"] : null);
                 echo "\">more posts</a> by this author.</p>
                     ";
             }
-            // line 48
+            // line 49
             echo "                    <div class=\"author-meta\">
                         ";
-            // line 49
+            // line 50
             if ($this->getAttribute($this->getAttribute((isset($context["site"]) ? $context["site"] : null), "author", array()), "location", array())) {
                 echo "<span class=\"author-location icon-location\">";
                 echo $this->getAttribute($this->getAttribute((isset($context["site"]) ? $context["site"] : null), "author", array()), "location", array());
                 echo "</span>";
             }
-            // line 50
+            // line 51
             echo "                        ";
             if ($this->getAttribute($this->getAttribute((isset($context["site"]) ? $context["site"] : null), "author", array()), "website", array())) {
                 echo "<span class=\"author-link icon-link\"><a href=\"";
@@ -226,17 +227,17 @@ class __TwigTemplate_8f7c10f02efe40212dc22dd1ae23a14d6306fb07b920a19763ade78f44a
                 echo $this->getAttribute($this->getAttribute((isset($context["site"]) ? $context["site"] : null), "author", array()), "website", array());
                 echo "</a></span>";
             }
-            // line 51
+            // line 52
             echo "                    </div>
                 </section>
             ";
         }
-        // line 54
+        // line 55
         echo "
             <section class=\"share\">
                 <h4>Share this post</h4>
                 <a class=\"icon-twitter\" href=\"https://twitter.com/share?text=";
-        // line 57
+        // line 58
         echo twig_escape_filter($this->env, $this->getAttribute((isset($context["page"]) ? $context["page"] : null), "title", array()));
         echo "&amp;url=";
         echo $this->getAttribute((isset($context["page"]) ? $context["page"] : null), "url", array(0 => true), "method");
@@ -245,14 +246,14 @@ class __TwigTemplate_8f7c10f02efe40212dc22dd1ae23a14d6306fb07b920a19763ade78f44a
                     <span class=\"hidden\">Twitter</span>
                 </a>
                 <a class=\"icon-facebook\" href=\"https://www.facebook.com/sharer/sharer.php?u=";
-        // line 61
+        // line 62
         echo $this->getAttribute((isset($context["page"]) ? $context["page"] : null), "url", array(0 => true), "method");
         echo "\"
                     onclick=\"window.open(this.href, 'facebook-share','width=580,height=296');return false;\">
                     <span class=\"hidden\">Facebook</span>
                 </a>
                 <a class=\"icon-google-plus\" href=\"https://plus.google.com/share?url=";
-        // line 65
+        // line 66
         echo $this->getAttribute((isset($context["page"]) ? $context["page"] : null), "url", array(0 => true), "method");
         echo "\"
                    onclick=\"window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;\">
@@ -267,9 +268,9 @@ class __TwigTemplate_8f7c10f02efe40212dc22dd1ae23a14d6306fb07b920a19763ade78f44a
 
 <aside class=\"read-next\">
     ";
-        // line 77
+        // line 78
         if ( !$this->getAttribute((isset($context["page"]) ? $context["page"] : null), "isFirst", array())) {
-            // line 78
+            // line 79
             echo "    <a class=\"read-next-story ";
             if ($this->getAttribute($this->getAttribute($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "nextSibling", array()), "header", array()), "image", array())) {
                 echo "\" style=\"background-image: url(";
@@ -283,21 +284,21 @@ class __TwigTemplate_8f7c10f02efe40212dc22dd1ae23a14d6306fb07b920a19763ade78f44a
             echo "\">
         <section class=\"post\">
             <h2>";
-            // line 80
+            // line 81
             echo $this->getAttribute($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "nextSibling", array()), "title", array());
             echo "</h2>
             <p>";
-            // line 81
+            // line 82
             echo call_user_func_array($this->env->getFilter('truncate')->getCallable(), array(strip_tags($this->getAttribute($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "nextSibling", array()), "content", array())), 140));
             echo "&hellip;</p>
         </section>
     </a>
     ";
         }
-        // line 85
+        // line 86
         echo "    ";
         if ( !$this->getAttribute((isset($context["page"]) ? $context["page"] : null), "isLast", array())) {
-            // line 86
+            // line 87
             echo "    <a class=\"read-next-story prev ";
             if ($this->getAttribute($this->getAttribute($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "prevSibling", array()), "header", array()), "image", array())) {
                 echo "\" style=\"background-image: url(";
@@ -311,38 +312,38 @@ class __TwigTemplate_8f7c10f02efe40212dc22dd1ae23a14d6306fb07b920a19763ade78f44a
             echo "\">
         <section class=\"post\">
             <h2>";
-            // line 88
+            // line 89
             echo $this->getAttribute($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "prevSibling", array()), "title", array());
             echo "</h2>
             <p>";
-            // line 89
+            // line 90
             echo call_user_func_array($this->env->getFilter('truncate')->getCallable(), array(strip_tags($this->getAttribute($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "prevSibling", array()), "content", array())), 140));
             echo "&hellip;</p>
         </section>
     </a>
     ";
         }
-        // line 93
+        // line 94
         echo "</aside>
 
 
 ";
     }
 
-    // line 98
+    // line 99
     public function block_bottom($context, array $blocks = array())
     {
-        // line 99
+        // line 100
         echo "
     ";
-        // line 100
+        // line 101
         if ($this->getAttribute((isset($context["site"]) ? $context["site"] : null), "disqus", array())) {
-            // line 101
+            // line 102
             echo "        <script>
         (function() {
         var d = document, s = d.createElement('script');
         s.src = '//";
-            // line 104
+            // line 105
             echo $this->getAttribute((isset($context["site"]) ? $context["site"] : null), "disqus", array());
             echo ".disqus.com/embed.js';
         s.setAttribute('data-timestamp', +new Date());
@@ -351,7 +352,7 @@ class __TwigTemplate_8f7c10f02efe40212dc22dd1ae23a14d6306fb07b920a19763ade78f44a
         </script>
     ";
         }
-        // line 110
+        // line 111
         echo "
 ";
     }
@@ -368,7 +369,7 @@ class __TwigTemplate_8f7c10f02efe40212dc22dd1ae23a14d6306fb07b920a19763ade78f44a
 
     public function getDebugInfo()
     {
-        return array (  355 => 110,  346 => 104,  341 => 101,  339 => 100,  336 => 99,  333 => 98,  326 => 93,  319 => 89,  315 => 88,  301 => 86,  298 => 85,  291 => 81,  287 => 80,  273 => 78,  271 => 77,  256 => 65,  249 => 61,  240 => 57,  235 => 54,  230 => 51,  221 => 50,  215 => 49,  212 => 48,  206 => 46,  200 => 44,  198 => 43,  191 => 41,  188 => 40,  181 => 36,  175 => 35,  172 => 34,  169 => 33,  167 => 32,  158 => 26,  152 => 22,  149 => 21,  106 => 20,  104 => 19,  98 => 18,  92 => 16,  90 => 15,  84 => 11,  82 => 10,  79 => 9,  76 => 8,  71 => 5,  68 => 4,  22 => 2,  19 => 1,);
+        return array (  356 => 111,  347 => 105,  342 => 102,  340 => 101,  337 => 100,  334 => 99,  327 => 94,  320 => 90,  316 => 89,  302 => 87,  299 => 86,  292 => 82,  288 => 81,  274 => 79,  272 => 78,  257 => 66,  250 => 62,  241 => 58,  236 => 55,  231 => 52,  222 => 51,  216 => 50,  213 => 49,  207 => 47,  201 => 45,  199 => 44,  192 => 42,  189 => 41,  182 => 37,  176 => 36,  173 => 35,  170 => 34,  168 => 33,  159 => 27,  153 => 23,  150 => 22,  107 => 21,  105 => 20,  99 => 19,  93 => 17,  91 => 16,  85 => 12,  83 => 11,  79 => 9,  76 => 8,  71 => 5,  68 => 4,  22 => 2,  19 => 1,);
     }
 }
 /* */
@@ -379,6 +380,7 @@ class __TwigTemplate_8f7c10f02efe40212dc22dd1ae23a14d6306fb07b920a19763ade78f44a
 /* {% endblock %}*/
 /* */
 /* {% block content %}*/
+/* */
 /* */
 /* {% include 'partials/header.html.twig' %}*/
 /*  */

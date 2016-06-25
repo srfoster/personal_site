@@ -1,7 +1,14 @@
+<style>
+@media only screen and (max-width: 479px) {
+  .logo{
+    display: none !important;    
+  }
+}
+</style>
 <header class="main-header post-head {% if page.header.image %}" style="background-image: url({{ page.media[page.header.image].url }}){% else %}no-cover{% endif %}">
     <nav class="main-nav {% if page.header.image %}overlay{% endif %} clearfix">
         {% if site.logo %}
-                    <figure class="author-image" style=" left: 60px; top: 20px;">
+                    <figure class="logo author-image" style=" left: 60px; top: 20px;">
                         <a class="img" href="/" style="background-image: url({{ site.author.image }})">
                             <span class="hidden">{{site.author.name}}'s Picture</span>
                         </a>

@@ -63,12 +63,23 @@ class __TwigTemplate_083186b291828d9d32fb89b41043c6e6e62de48e5524a1f15b5967a73e0
         echo "        ";
         $this->displayBlock('javascripts', $context, $blocks);
         // line 70
-        echo "        
+        echo "
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-79655622-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+        
     </body>
     ";
-        // line 72
+        // line 83
         $this->displayBlock('bottom', $context, $blocks);
-        // line 73
+        // line 84
         echo "</html>
 ";
     }
@@ -241,7 +252,7 @@ class __TwigTemplate_083186b291828d9d32fb89b41043c6e6e62de48e5524a1f15b5967a73e0
         ";
     }
 
-    // line 72
+    // line 83
     public function block_bottom($context, array $blocks = array())
     {
     }
@@ -258,7 +269,7 @@ class __TwigTemplate_083186b291828d9d32fb89b41043c6e6e62de48e5524a1f15b5967a73e0
 
     public function getDebugInfo()
     {
-        return array (  245 => 72,  239 => 68,  236 => 67,  233 => 66,  230 => 65,  227 => 64,  224 => 63,  221 => 61,  218 => 60,  215 => 58,  212 => 57,  209 => 55,  206 => 54,  203 => 53,  198 => 45,  193 => 38,  190 => 37,  183 => 31,  180 => 30,  177 => 29,  172 => 33,  170 => 29,  166 => 27,  157 => 24,  154 => 23,  121 => 21,  117 => 20,  112 => 18,  109 => 17,  103 => 15,  100 => 14,  94 => 12,  88 => 10,  86 => 9,  80 => 5,  77 => 4,  72 => 73,  70 => 72,  66 => 70,  63 => 53,  54 => 48,  50 => 46,  48 => 45,  43 => 42,  41 => 41,  38 => 40,  36 => 37,  32 => 35,  30 => 4,  25 => 1,);
+        return array (  256 => 83,  250 => 68,  247 => 67,  244 => 66,  241 => 65,  238 => 64,  235 => 63,  232 => 61,  229 => 60,  226 => 58,  223 => 57,  220 => 55,  217 => 54,  214 => 53,  209 => 45,  204 => 38,  201 => 37,  194 => 31,  191 => 30,  188 => 29,  183 => 33,  181 => 29,  177 => 27,  168 => 24,  165 => 23,  132 => 21,  128 => 20,  123 => 18,  120 => 17,  114 => 15,  111 => 14,  105 => 12,  99 => 10,  97 => 9,  91 => 5,  88 => 4,  83 => 84,  81 => 83,  66 => 70,  63 => 53,  54 => 48,  50 => 46,  48 => 45,  43 => 42,  41 => 41,  38 => 40,  36 => 37,  32 => 35,  30 => 4,  25 => 1,);
     }
 }
 /* <!DOCTYPE html>*/
@@ -330,6 +341,17 @@ class __TwigTemplate_083186b291828d9d32fb89b41043c6e6e62de48e5524a1f15b5967a73e0
 /* */
 /*             {{ assets.js() }}*/
 /*         {% endblock %}*/
+/* */
+/* <script>*/
+/*   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){*/
+/*   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),*/
+/*   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)*/
+/*   })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');*/
+/* */
+/*   ga('create', 'UA-79655622-1', 'auto');*/
+/*   ga('send', 'pageview');*/
+/* */
+/* </script>*/
 /*         */
 /*     </body>*/
 /*     {% block bottom %}{% endblock %}*/
